@@ -1,0 +1,218 @@
+# portfoilio
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="images/794baac215ba4f2fd53123d428a5c782.jpg" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <!-- navbar position sticky -->
+    <div class="container-fluid">
+      <img src="images/794baac215ba4f2fd53123d428a5c782.jpg" width="50px" height="50px" alt=""
+        style="border-radius: 50%;">
+      <a class="navbar-brand mx-2" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#timer">Timer</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="container text-center my-4">
+      <div class="row align-items-center my-5">
+        <div class="col my-5">
+          <img src="images/unnamed.jpg" alt="" style="border-radius: 20px;width: 300px;height: 300px;" class="">
+          <h2>subhan</h2>
+        </div>
+        <div class="col container  my-4" style="text-align: justify;">
+          <p class="text-center">Hello there I am subhan. I have currently passed my 10th standard and my results gonna
+            come soon.Till that I started learning CS and started to persue my carreir in web development you can have
+            more information about me and my skills as you will scroll down. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Enim animi dignissimos deserunt at ab, sed natus laborum, illo perspiciatis error
+            praesentium. Magni sapiente at eveniet, corporis incidunt velit suscipit molestiae. </p>
+          <a href="#about" class="btn btn-outline-success" >Learn More A bout Me Below Hope You Will Like It!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="about">
+    <div class="container text-center">
+      <div class="row align-items-center">
+      
+        <div class="col text-center">
+          <h2 class="mb-3">Some More About Me:</h2>
+          <p>Till you must have understood about me and my skills and to make this even more interesting i will attch  one of my projects on my portfolio so you can estimate my potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque excepturi explicabo esse mollitia eveniet optio repudiandae, natus cumque rerum doloribus aperiam. Error necessitatibus facere illum animi distinctio harum quos! </p>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+<hr>
+
+  <section id="skills" class="my-4">
+    <div class="container text-center">
+      <div class="row d-flex align-items-center justify-center">
+                
+        <div class="col imagesDiv">
+          <h2 class="mb-3">My Skills</h2>
+        
+          <img src="images/html-removebg-preview.png" width="200px" height="200px" alt="" class="imgs">
+          <img src="images/css-removebg-preview.png" width="200px" height="200px" alt="" class="imgs">
+          <img src="images/js_bg_black-removebg-preview.png" width="180px" height="200px" alt="" class="imgs">
+          <img src="images/bootsrap-removebg-preview.png" height="200px" width="200px" alt="" class="imgs">     
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <section id="project">
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+          <h2 class="my-2">My Projects</h2>
+          <h3 class="my-4"><i>Calculator</i></h2>
+             <div class="container align-items-center calculator mb-5">
+
+               <div class="input">
+                 <input type="text" name="" id="display" placeholder="Enter">
+               </div>
+               <div class="operators1">
+                 <input type="button" value="AC" onclick="display.value=''">
+                 <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                 <input type="button" value="." onclick="display.value +='.'">
+                 <input type="button" value="/" onclick="display.value +='/'">
+               </div>
+
+               
+              <div class="operators2">
+                <input type="button" value="7" onclick="display.value +='7'">
+                <input type="button" value="8" onclick="display.value +='8'">
+                <input type="button" value="9" onclick="display.value +='9'">
+                <input type="button" value="*" onclick="display.value +='*'">                
+              </div>
+
+              <div class="operators3">
+                <input type="button" value="4" onclick="display.value +='4'">
+                <input type="button" value="5" onclick="display.value +='5'">
+                <input type="button" value="6" onclick="display.value +='6'">
+                <input type="button" value="-" onclick="display.value +='-'">                
+              </div>
+
+              <div class="operators4">
+                <input type="button" value="1" onclick="display.value +='1'">
+                <input type="button" value="2" onclick="display.value +='2'">
+                <input type="button" value="3" onclick="display.value +='3'">
+                <input type="button" value="+" onclick="display.value +='+'">                
+              </div>
+
+              <div class="operators5">
+                <input type="button" value="00" onclick="display.value +='00'">
+                <input type="button" value="0" onclick="display.value +='0'">
+                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+              </div>
+
+             </div>
+   
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<hr>
+
+  <section id="timer">
+    <div class="container text-center">
+      <div class="row align-items-center">
+       
+        <div class="col-md-12">
+          <h4>Timer</h4>
+          <div class="time"></div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+    <div class="container text-center">
+      <div class="row align-items-center">
+       
+        <div class="col-md-12">
+          <h4 class="my-4">You can conact me via</h4>
+          <img src="images/whatsapp.png" alt="" width="50px" height="50px" id="whatsapp">
+          <img src="images/instagram.png" alt="" width="50px" height="50px" id="instagram">
+          <img src="images/fb.png" alt="" width="50px" height="50px" id="fb">
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="container text-center">
+      <div class="row align-items-center">
+       
+        <div class="col">
+          <footer>@ Portfolio 2024</footer>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <br>
+
+<hr>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
